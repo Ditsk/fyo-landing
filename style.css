@@ -474,7 +474,16 @@ footer {
     align-items: center;
 }
 
+.social-link {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and (min-width: 996px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header-link {
         font-family: 'Raleway';
     font-style: normal;
@@ -746,9 +755,26 @@ footer {
         grid-row: 2;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 2rem;
+        justify-content: normal;
     }
+
+    /* Hover effects */
+
+    .button-1:hover {
+        opacity: 0.75;
+    }
+
+    .button-2:hover {
+        opacity: 0.75;
+    }
+
+    .social-link > i:hover {
+        color: #6C9BFF;
+    }
+
+    .footer-txt:hover {
+        color: #6C9BFF;
+    }
+
 
 }
