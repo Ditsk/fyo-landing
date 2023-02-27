@@ -699,7 +699,7 @@ footer {
 
         color: #FFFFFF;
         text-align: left;
-        /* width: 50%; */
+        width: 80%;
     }
 
     .early-1 {
@@ -708,7 +708,7 @@ footer {
     }
     .early-2 {
         align-items: normal;
-        margin-right: 20rem;
+        margin-right: 25rem;
     }
 
     .form-2 {
