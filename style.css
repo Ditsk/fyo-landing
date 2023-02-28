@@ -96,6 +96,12 @@ header {
     transition: ease .25s;
 }
 
+.input-1:invalid ~ .error-message {
+    display: block;
+    position: absolute;
+    margin-top: 3rem;
+}
+
 
   
 .input-1:focus {
@@ -103,24 +109,19 @@ header {
 }
 
 .error-message {
-    
+    padding: 0 30px 0 50px;
+    color: #999;
+    transition: 0.28s;
+    overflow: hidden;
+    color: red;
+    font-style: italic;
+
+    display: none;
+
     margin: 0;
     padding: 0;
-    opacity: 0;
     
 }
-
-
-
-.input-1:invalid::after {
-    content: "Please enter a valid email address";
-    display: block;
-    color: red;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
 
 .input-1 {
     padding: 12px 20px;
