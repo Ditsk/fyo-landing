@@ -104,20 +104,22 @@ header {
 
 
   
-.input-1:focus {
+.input-1:focus, .input-2:focus {
     outline: none;
 }
 
 .error-message {
-    padding: 0 30px 0 50px;
-    color: #999;
-    transition: 0.28s;
-    overflow: hidden;
-    color: red;
-    font-style: italic;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+
+    color: #EF4877;
 
     display: none;
-
+    transition: 0.28s;
     margin: 0;
     padding: 0;
     
@@ -452,6 +454,10 @@ line-height: 12px;
 color: #FFFFFF;
 }
 
+.error-message-2 {
+    display: none;
+}
+
 footer {
     background-color: #07043B;
     display: flex;
@@ -778,13 +784,41 @@ footer {
         width: 150%;
     }
 
-    /* .form-2 {
-        width: 220%;
+    .button-2 {
+        width: 70%;
     }
 
-    .button-2 {
-        width: 130%;
-    } */
+    .error-message-2 {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+
+        color: #FFFFFF;
+
+        display: none;
+        transition: 0.28s;
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-2:invalid {
+        border: 1px solid #EF4877;
+        box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+        border-radius: 3.125px;
+    }
+
+    .input-2:invalid ~ .error-message-2 {
+        display: block;
+        position: absolute;
+        margin-top: -4rem;
+    }
+
+    .input-2:invalid ~ .button-2 {
+        margin-top: 2rem;
+    }
 
     footer {
         display: grid;
